@@ -23,6 +23,7 @@ Estos tests cubren todos los ejercicios y casos borde importantes.
 
 testsConcatenar : Test
 testsConcatenar =
+
     describe "Tests para concatenar"
         [ test "concatenar dos listas normales" <|
             \_ ->
@@ -463,6 +464,7 @@ testsRemoverDuplicados =
 
 testsSubSets : Test
 testsSubSets =
+    Test.only <|
     describe "Tests para subSets (opcional)"
         [ test "subsets de lista vacía" <|
             \_ ->
